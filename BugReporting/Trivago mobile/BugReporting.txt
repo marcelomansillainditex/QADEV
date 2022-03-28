@@ -1,0 +1,47 @@
+Trivago is a hotel-booking website.
+
+Report
+
+Bug:
+Trivago Mobile::
+
+Context
+Trivago: https://www.trivago.com.ar/
+Browser mobile: Chrome
+iOS 15.3.1
+Android 12
+
+Steps
+1. Go to https://www.trivago.com.ar/
+2. Fill search information
+    i. Malaga
+3. Click on Search button
+4. Select filters:
+    i. 'Puntuación de huéspedes': 8.5
+    ii. 'Tipo de hospedaje': 'Hotel 5 Estrellas'
+5. Click on 'Listo' button
+6. The selected filters are displayed. The list of results is displayed.
+7. Click on x of Hotel filter
+
+Actual Result:
+ - The '5 Estrellas' filter is displayed. That filter is for the hotel option, if the user removes the hotel filter the star filter should be removed two.
+ - The list of results is updated.
+ The Hotel:
+ 'Ibis budget Malaga centro
+ 1 Estrella
+ Hotel
+ Valoración 7.3'
+
+ Should not be on the result list because it does not match any of the selected filters
+ The filters displayed: 'Valoración': 8.5+ and '5 Estrellas'
+
+Expected Result: when the user removes the hotel filter the star filter should be removed.
+
+Attached video: BUG: trivago filters.mp4
+
+Note: I can reproduce this bug on iOS 15.3.1 and Android 12.
+This bug is not reproducible in the desktop Chrome browser. If the user changes 'Tipo de hospedaje' filter the star filter is removed.
+
+Severity: Medium
+Priority: Medium
+The filter functionality is not working as expected.

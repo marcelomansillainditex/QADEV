@@ -1,0 +1,63 @@
+I found the following bug on Carrefour page.
+Carrefour is a supermarket.
+On their website you can create a user and make purchases.
+
+Report
+
+Bug:
+Carrefour page: 'Mi Cuenta' > When clicking on 'Favoritos' link, the 'Favoritos' section is not displayed if the user is on 'Mi cuenta' section
+
+Pre-conditions
+1. Carrefour user to login.
+
+Context
+Carrefour url: https://www.carrefour.com.ar/
+
+Steps
+1. Go to https://www.carrefour.com.ar/
+2. Click on 'Ingresar'
+3. Fill user/pass to log in
+4. Click on 'Mi Cuenta' > 'Datos Personales'
+5. Click on Favorites link. The option next to 'Mi Cuenta'
+
+Actual Result: The 'Datos Personales' section is displayed
+
+Note: If the user click on another link as 'Sucursales', by example, and then click on Favorites link the option next to 'Mi Cuenta'
+The 'Favoritos' section is displayed as expected.
+
+Expected Result: The 'Favoritos' section should be displayed
+Attached video: BUG: 'Favoritos' link doesn't work as expected.mov
+
+Severity: Minor
+Priority: Medium
+The 'Favoritos' section cannot be accessed from the link next to 'Mi Cuenta', but there are other ways to access it.
+The other options work, so this bug is not blocking a functionality.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Bug:
+Carrefour page:'Mi Cuenta' > Clicking on 'Favoritos' section the username and the section title overlap
+
+Pre-conditions
+1. Carrefour user to login.
+2. User Name: Sandra Josefa Analía
+
+Context
+Carrefour url: https://www.carrefour.com.ar/
+Browser: Chrome
+
+Steps
+1. Go to https://www.carrefour.com.ar/
+2. Click on 'Ingresar'
+3. Fill user/pass to log in
+4. Click on 'Mi Cuenta' > 'Datos Personales'
+5. Click on 'Favoritos' option in the list
+
+Actual Result: The username and the section title overlap
+Expected Result: The username and the section title should not overlap
+
+Attached image: BUG: Favoritos title.mov
+
+Severity: Cosmetic
+Priority: Low
+Is a visual issue, no functionality is affected by this bug
