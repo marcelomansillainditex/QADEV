@@ -2,7 +2,7 @@
 
 ## Automation framework
 
-* [Java 14](https://openjdk.java.net/projects/jdk/11/)
+* [Java 11](https://openjdk.java.net/projects/jdk/11/)
 * [Maven](https://maven.apache.org/docs/3.8.1/release-notes.html)
 * [TestNG](https://testng.org/doc/)
 * [Selenium WebDriver](https://www.selenium.dev/)
